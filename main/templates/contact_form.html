@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a35e93acff.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <script src="index.js"></script>
+    <title>Clean Up Britain</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/rahasestore.css">
+    <link rel="contents" href="../templates/contact_form_sent.html.html">
+    <link rel="contents" href="../templates/home.html">
+</head>
+<body>
+
+
+    <h2 class="title_top">Contact us</h2>
+    <p class="contact_text">Please fill the form below to contact us:</p>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form_group">
+            <div class="flex_left">{{ form.firstname.label_tag }}</div>
+            <div class="flex_right">
+                <input type="text" class="form_control {% if form.firstname.errors %}is_valid{% endif %}"
+                       id="id_firstname" name="firstname" placeholder="Your first name" value={% if user.is_authenticated %} {{ user.first_name }} {% else %} "{{ form.firstname.value|default:"" }}" {% endif %}>
+            </div>
+            {% if form.firstname.errors %}
+                <div class="invalid-feedback">
+                    {{ form.firstname.errors }}
+                </div>
+            {% endif %}
+        </div>
+        <div class="form_group">
+            <div class="flex_left">{{ form.lastname.label_tag }}</div>
+            <div class="flex_right">
+                <input type="text" class="form_control {% if form.lastname.errors %}is_valid(){% endif %}"
+                       id="id_lastname" name="lastname" placeholder="Your family name" value={% if user.is_authenticated %} {{ user.last_name }} {% else %} "{{ form.lastname.value|default:"" }}" {% endif %}>
+            </div>
+            {% if form.lastname.errors %}
+                <div class="invalid-feedback">
+                    {{ form.lastname.errors }}
+                </div>
+            {% endif %}
+        </div>
+        <div class="form_group">
+            <div class="flex_left">{{ form.phone.label_tag }}</div>
+            <div class="flex_right">
+                <input type="text" class="form_control {% if form.phone.errors %}is_valid{% endif %}"
+                       id="id_phone" name="phone" placeholder="Phone" value="{{ form.phone.value|default:"" }}">
+            </div>
+            {% if form.phone.errors %}
+                <div class="invalid-feedback">
+                    {{ form.phone.errors }}
+                </div>
+            {% endif %}
+        </div>
+        <div class="form_group">
+            <div class="flex_left">{{ form.email.label_tag }}</div>
+            <div class="flex_right">
+                <input type="text" class="form_control {% if form.email.errors %}is_valid{% endif %}"
+                       id="id_email" name="email" placeholder="eMail" value={% if user.is_authenticated %} {{ user.email }} {% else %} "{{ form.email.value|default:"" }}" {% endif %}>
+            </div>
+            {% if form.email.errors %}
+                <div class="invalid-feedback">
+                    {{ form.email.errors }}
+                </div>
+            {% endif %}
+        </div>
+        <div class="form_group">
+            <div class="flex_left">{{ form.subject.label_tag }}</div>
+            <div class="flex_right">
+                <input type="text" class="form_control {% if form.subject.errors %}is_valid{% endif %}"
+                       id="id_subject" name="subject" placeholder="Write Subject..." value="{{ form.subject.value|default:"" }}">
+            </div>
+            {% if form.subject.errors %}
+                <div class="invalid-feedback">
+                    {{ form.subject.errors }}
+                </div>
+            {% endif %}
+        </div>
+        <div class="form_group">
+            <div class="flex_left">{{ form.message.label_tag }}</div>
+            <div class="flex_right">
+                <textarea class="form_control {% if form.message.errors %}is_valid{% endif %}"
+                          id="id_message" name="message" placeholder="Your Subject..." rows="6">
+                    {{ form.message.value|default:"" }}
+                </textarea>
+            </div>
+            {% if form.message.errors %}
+                <div class="invalid-feedback">
+                    {{ form.message.errors }}
+                </div>
+            {% endif %}
+        </div>
+        <button type="submit" class="btn btn-primary my_buttons">Send message to us</button>
+    </form>
+</body>
+</html>
+

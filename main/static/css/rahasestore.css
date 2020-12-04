@@ -1,0 +1,199 @@
+.invalid-feedback {
+    display: none;
+}
+
+.language_selector {
+    font-family: sans-serif;
+
+    background-color: #f8f9fa !important;
+    color: #212529;
+}
+
+.signup {
+    float: right;
+}
+
+.header {
+    color: #ffffff;
+    background: url("/static/images/header_image_mountains_clouds.JPG");
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+
+.product_list_line {
+    margin-top: 20px;
+    margin-left: 20%;
+}
+.separator_line {
+    margin-left: 20%;
+    margin-right: 10%;
+}
+.title_top {
+    margin-left: 10%;
+}
+.grid_container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 15%;
+    width: 70%;
+}
+.grid_item {
+    background-color: #eeeeee;
+    margin: 10px 10px 10px 10px;
+    border-radius: 5px;
+}
+.grid_image {
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.grid_text {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.table_detail {
+    margin-left: 10%;
+}
+.list_title {
+    width: 100px;
+}
+.select_tags {
+    float: right;
+    margin-top: 9px;
+    margin-right: 10px;
+}
+.switch_to {
+    float: right;
+    margin-top: 9px;
+    margin-right: 10px;
+}
+.product_list_menu {
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 50px;
+    background-color: #efefef;
+}
+.home {
+    font-family: Calibri, sans-serif;
+}
+.title {
+    margin-left: 5%;
+}
+.home_title {
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.home_text_title {
+    font-size: large;
+    font-weight: bold;
+}
+.home_text {
+    font-size: medium;
+    padding-bottom: 20px;
+
+}
+.home_left {
+    width: 40%;
+    float: left;
+    margin-left: 10%;
+    padding: 10px;
+    height: 500px;
+}
+.home_right {
+    width: 40%;
+    float: left;
+    margin-right: 10%;
+    padding: 10px;
+    height: 500px;
+}
+.schema {
+    margin-left: 6%;
+}
+.contact_text {
+    margin-left: 20%;
+}
+.form_group {
+    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+}
+.form_group_detail {
+    margin-top: 60px;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+}
+.form_control {
+    padding-left: 10px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    width: 400px;
+}
+.flex_left {
+    flex: 10%;
+}
+.flex_left_ {
+    flex: 18%;
+}
+.flex_right {
+    flex: 90%;
+}
+.flex_right_ {
+    flex: 80%;
+}
+.addr_flex_left {
+    flex: 10%;
+}
+.addr_flex_mid {
+    float: left;
+    flex: 40%;
+}
+.addr_flex_right {
+    float: left;
+    flex: 25%;
+}
+.my_buttons {
+    margin-top: 40px;
+    margin-left: 20%;
+}
+.submit_button {
+    margin-left: 100px;
+}
+.place_order_button {
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.address_button{
+    margin-left: 10%;
+}
+.basket_item {
+    margin-top: 60px;
+    margin-left: 20%;
+}
+.thumbnail_image {
+    float: left;
+    padding-right: 30px;
+}
+.basket_text {
+    padding-bottom: 10px;
+}
+.qty_widget {
+    width: 80px;
+    float: bottom;
+}
+.pagtn {
+    margin-top: 40px;
+    margin-left: 10%;
+}
+.address_item {
+    margin-top: 60px;
+    margin-left: 20%;
+}

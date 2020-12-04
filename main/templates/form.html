@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a35e93acff.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="Stylesheet" href="form.css">
+<script src="index.js"></script>
+<title>Clean Up Britain</title>
+</head>
+<body>
+    <header>
+        <img src="/images/logo.png" width="150">
+
+        <nav class="navbar">
+            <ul id="navbar">
+                <li class="navbar"><a href="index.html">HOME</a></li>
+                <li class="navbar"><a href="index.html">ABOUT US</a></li>
+                <li class="navbar"><a href="index.html">WHY CONTRIBUTE?</a></li>
+                <li class="navbar"><a href="photo.html">REPORT ISSUES</a></li>
+                <li class="navbar"><a href="reports">REPORTS</a></li>
+                <li class="navbar"><a href="form.html">BECOME A CONTRIBUTER</a></li>
+                <li class="navbar"><a href="#contact">CONTACT</a></li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section class="log">
+        <form action="/action_page.php" method="post">
+        <!--<div class="imgcontainer">
+            <h2>Login Form</h2>
+            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        </div> -->
+
+        <div class="content">
+            <h2>Login Form</h2>
+            <p></p>
+            <br><br><hr>
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter email" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+        </div>
+        <br><br><br>
+        <div class="container">
+            <button type="submit">Login</button>
+            <button type="button" class="cancelbtn">Cancel</button>            
+            <span class="psw"><a href="#">Forgot password?</a></span>
+        </div>
+        </form>
+    </section>
+    <section class="sign">
+        <form action="/action_page.php">
+        <div class="content">
+            <h2>Sign Up</h2>
+            <p>Please fill in this form to create an account.</p>
+        <hr>
+  
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+  
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+  
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+            <!--    <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label> -->
+      
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a></p>
+  
+            <div class="container">
+                <button type="submit" class="signupbtn">Sign Up</button>
+                <button type="button" class="cancelbtn">Cancel</button>                
+            </div>
+        </div>
+        </form>
+    </section>
+    </main>
+    <footer id="contact" >
+        <section class="links">
+            <h6><b>GENERAL</b></h6>
+            <ul>
+                <li><i class="far fa-envelope"></i><a href="mailto:info@cleanupbritain.org"> info@cleanupbritain.org</a></li>
+                <li><i class="fas fa-globe-americas"></i><a target="blank" href="https://cleanupbritain.org/"> www.cleanupbritain.org</a></li>
+                <li><i class="fab fa-twitter"></i><a target="blank" href="https://twitter.com/cleanupbritain?lang=en"> @cleanupbritain</a></li>
+                <li><i class="fab fa-facebook-f"></i><a target="blank" href="https://www.facebook.com/CleanUpBritain/"> facebook.com/CleanUpBritain</a></li>
+                <li><i class="fab fa-youtube"></i><a target="blank" href="https://www.youtube.com/channel/UCInD0Fj_oOQkrqFXHDIL93g/"> Youtube</a></li>
+            </ul>
+        </section>
+
+        <section class="add">
+            <h6><b>CLEAN UP BRITAIN</b></h6>
+            <address>
+            
+            <i class="fas fa-home"></i>
+                87a High Street           
+        <br>    The Old Town
+        <br>    Hemel Hempstead
+        <br>    Hertfordshire
+                HP1 3AH
+            
+            </address>
+        </section>
+    </footer>
+</body>
+</html>
